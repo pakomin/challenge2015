@@ -20,7 +20,8 @@ def find_degrees_of_separation(person1_url, person2_url):
         current_person = que.popleft()
         if current_person.url == person2_url:
             current_person.show_result()
-            return
+            pool.close()
+            return current_person.degree
 
         #check if visited
         if current_person.url in visited_actors:
@@ -69,6 +70,7 @@ def find_degrees_of_separation(person1_url, person2_url):
                               )
                 if actor.url == person2_url:
                     actor.show_result()
-                    return
+                    pool.close()
+                    return actor.degree
                 que.append(actor)
                 enqueued_actors.add(actor_url)
