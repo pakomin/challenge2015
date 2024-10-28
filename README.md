@@ -18,5 +18,9 @@ A command-line tool to calculate the degrees of separation between actors in the
 3. For actors 2-hop separated: ~15 minutes
 4. For actors 3-hop separated: ~50 minutes
 
+# TODO: Future improvements
+1. parallelize using asyncio
+2. Reduce runtime to less than 5minutes per call for all actors
+
 ## Credits
 1. Pulkit Manocha
