@@ -12,5 +12,11 @@ A command-line tool to calculate the degrees of separation between actors in the
    ```commandline
    ./degrees <actor-url-1> <actor-url-2>"
 
+## Typical runtimes
+1. For same actor-urls: ~1 second
+2. For actors 1-hop separated: ~15 seconds
+3. For actors 2-hop separated: ~15 minutes
+4. For actors 3-hop separated: ~50 minutes
+
 ## Credits
 1. Pulkit Manocha
